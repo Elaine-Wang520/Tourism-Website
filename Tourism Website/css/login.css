@@ -1,0 +1,94 @@
+body {
+    background-image: url("../img/banner1.jpg");/*背景图片*/
+    background-size: 100%;背景拉伸整个屏幕
+    background-repeat: no-repeat;
+}
+li{
+	list-style: none;
+	float: left;
+}
+/*设置登录块居中*/
+#login_frame {
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+    position: absolute;/*绝对定位*/
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+/*让输入框和label对齐居中*/
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.image_logo {
+    margin-top: 22px;
+    width: auto;
+    height: auto;
+}
+.image_logo img{
+	width:100px;
+	height: 100px;
+	border-radius: 20%;
+}
+.label_input {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;/*设置圆角*/
+}
+.text_field {
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+#btn_login {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+    float: left;
+}
+.forget_pwd {
+    position: relative;
+    float: right;
+    top: 5px;
+}
+.forget_pwd a{
+	font-size: 12px;
+    color: #3CD8FF;
+    text-decoration: none;
+}
+.forget_pwd a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+#login_control {
+    padding: 0 28px;
+}
+@media (max-width:780px) {
+	body {
+		
+   		width:780px;
+   		background:rgb(16, 148, 187,0.5);
+	}
+}

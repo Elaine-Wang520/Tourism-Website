@@ -1,0 +1,181 @@
+.container{
+	margin:0px;
+	padding: 0px;
+	width:100%;
+}
+.container h1{
+	color: hotpink;
+	font-family: arial;
+	font-size: 50px;
+	text-align: center;
+}
+.story{
+	width: 100%;
+	height: 30%;
+	background: white;
+}
+.story h1{
+	font-size: 35px;
+}
+.story h4{
+	margin-left: 80px;
+	font-family: arial;
+	line-height: 35px;
+}
+.story p{
+	margin-left: 80px;
+	font-family: arial;
+	line-height: 25px;
+}
+
+/*Service*/
+.Service{
+	background: url("../img/service.jpg");
+    background-size: 100%;背景拉伸整个屏幕
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*固定背景图片*/
+	background-position: center;
+	background-size: cover;/*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+背景图像的某些部分也许无法显示在背景定位区域中。*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    height: 600px;
+    position: relative;
+}
+.Service h1{
+	color: white;
+	margin-top: 5px;
+	padding-top: 50px;
+}
+.Service-left{
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	float: left;
+}
+.Service-left li{
+	list-style: none;	
+	float: left;
+	width:30%;
+	height: 40%;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.Service-left a{
+	text-decoration: none;
+	color: white;
+}
+.Service-left a:hover{
+	color: orange;
+}
+.Service-right{
+	width: 40%;
+	height: 100%;
+	position:relative;
+	float: right;
+}
+.Service-right1{
+	height: 40%;
+	margin-top: 10%;
+	border-bottom:2px solid white ;
+}
+.Service-right1 h4{
+	color: white;
+	font-family: arial;
+	font-weight: 100;
+	line-height: 25px;
+}
+.Service-right2 h5{
+	color: #14BAE7;
+	font-family: arial;
+	line-height: 30px;
+}
+.team {
+    padding: 5em 0;
+	background: #F6F9FD;
+	width: 100%;
+	height: 400px;
+	margin-top: 500px;
+}
+.tittle{
+	margin-top: -20px;
+}
+.team h3{
+	font-family: arial;
+	font-size: 50px;
+	margin-left: 600px;
+	color:#007EA3 ;
+}
+.team a{
+	color: #007EA3;
+}
+.team_gds {
+	padding-left:50px ;
+    margin-top: 30px;
+    width:320px;
+    height: 300px;
+    text-align: center;
+}
+.img-responsive{
+	width:300px;
+	height: 300px;
+}
+.team_gds img:hover{
+	transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    -ms-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    width: 100%;
+    border: 1px solid #B7B7B7;
+}
+.team li{
+	list-style: none;
+	float: left;
+}
+.copyRight{
+	position: relative;
+	margin-top: 580px;
+	text-align: center;
+	height: 30px;
+}
+@media (max-width:780px) {
+	.container{
+		width: 780px;		
+	}
+	.Service{
+		width: 780px;
+	}
+	.Service-left img{
+		width:60%;
+	}
+	.Service-right1{
+		height: 46%;	
+	}
+	.Service-right2{
+		margin-top: 5%;
+	}
+	.team {
+	width: 100%;
+	height: 800px;
+	text-align: center;
+	}
+	.team h3{
+		font-size: 35px;
+		margin-left:30%;
+	}
+	.team_gds {
+	padding-left:50px ;
+    margin-top: 30px;
+    width:320px;
+    height: 400px;
+    text-align: center;
+	}	
+	.copyRight{
+		width: 780px;
+	margin-top: 970px;
+	height: 30px;
+	}
+}

@@ -1,0 +1,159 @@
+.promotions {
+    padding: 5em 0;
+    background: #F6F9FD;
+}
+.promotion-grids{
+    margin-top: 4em ;
+}
+h2.tittle {
+    font-size: 3.5em;
+    text-align: center;
+	color: #062f3c;
+}
+h3.tittle {
+    font-size: 3.5em;
+    text-align: center;
+    color: #062f3c;
+}
+.prom-text{
+	margin-top: -0.7em;
+}
+.promation-grid h4 {
+    font-size: 1.5em;
+    background: #062f3c;
+    padding: 0.5em;
+    color: #fff;
+}
+.promation-grid h5{
+	font-size:1em;
+	color:#fff;
+}
+.prom-bottom {
+	margin-top: -1em;
+    background: #007ea3;
+    width: 100%;
+    height: 40px;
+}
+/*景点所属地方*/
+.prom-left {
+    float: left;
+    width: 50%;
+    background:rgb(16, 148, 187);
+    padding: 0.5em;
+    height: 40px;
+}
+/*类型*/
+.prom-right {
+    float: left;
+    width: 50%;
+    padding: 0.5em;
+    height: 40px;
+}
+.promotions span {
+    text-align: center;
+    display: block;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    color: #777;
+}
+.promation-grid p {
+    font-size: 1em;
+    line-height: 2em;
+	padding-top: 0.8em
+}
+.promation-grid  {
+    overflow: hidden;/*隐藏溢出*/
+}
+/*当鼠标移动到图片上时，图片缩小的原来的0.9倍*/
+.promation-grid:hover img {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+/*设置图片由慢到快再到慢的渐变*/
+.promation-grid img{
+    -webkit-transition: all 2s ease-in-out;/*all 表示所有元素*/
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+/*景点大致浏览*/
+.gallery {
+    padding: 1.5em 0;
+}
+.gallery-grids {
+    margin-top: 4em;
+}
+.gallery-grids img{
+	width:350px ;
+  	height: 270px;
+}
+.da-thumbs {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.da-thumbs li {
+  float: left;
+  margin: 0.4%;
+  background:#fff;
+  padding: 8px;
+  position: relative;
+  width: 32.4%;
+}
+.thumbs-li {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;/*将溢出部分隐藏*/
+    height: 220px;
+}
+.thumbs-li:hover .thums-text {
+    opacity: 1;
+    text-align: center;
+    transform: translateY(-250px);
+    -webkit-transform: translateY(-250px);
+    -moz-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
+    -o-transform: translateY(-250px);
+}
+.thumbs-li:hover .thums-text h5{
+	font-family: "微软雅黑";
+	font-size: 1.8em;
+}
+.thumbs-li img {
+    z-index: 4;
+}
+.thumbs-li .thums-text {
+	background: rgba(0,0,0,0.4);
+    position: absolute;
+    text-align: center;
+    padding-top: 100px;
+    top: 250px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+.thumbs-li .thums-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+}
+/*页脚*/
+.copyRight{
+	height: 35px;
+	text-align: center;
+	background: #007ea3;
+	opacity: 0.4;
+	padding-top: 10px;
+}
+.copyRight span{
+	color: white;
+}

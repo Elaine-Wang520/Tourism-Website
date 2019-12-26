@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		
+	</head>
+	<body>
+			<div class="register-box">
+				<h1>用户注册</h1>
+				<form method="post" action="register.js">
+					<!--
+                    	作者：offline
+                    	时间：2018-11-16
+                    	描述：用户名
+                    -->
+					<div class="username-box">
+					<span id="require1">*</span>
+					<label for="username">用户名</label>
+					<div class="username-input">
+						<input type="text" id="username" name="username" placeholder="请输入用户名 长度:3-15个字符" />
+					</div>
+					</div>
+					
+					<!--
+                    	作者：offline
+                    	时间：2018-11-16
+                    	描述：密码
+                    -->
+					<div class="userPassword-box">
+					<span id="require2">*</span>
+					<label for="userPassword">密码</label>
+					<div class="userPassword-input">
+						<input type="password" id="userPassword" name="userPassword" placeholder="请输入密码 长度:6-12个字符" />
+					</div>
+					</div>
+					<!--
+                    	作者：offline
+                    	时间：2018-11-16
+                    	描述：确认密码
+                    -->
+                    <div class="userRePassword-box">
+					<span id="require3">*</span>
+						<label for="userRePassword">确认密码</label>
+					<div class="userRePassword-input">
+						<input type="password" id="userRePassword" name="userRePassword" placeholder="请重复输入密码" />
+					</div>
+				</div>
+					<!--
+                    	作者：offline
+                    	时间：2018-11-16
+                    	描述：手机号码
+                    -->
+					<div class="userPhone-box">
+					<span id="require4">*</span>
+					<label for="userPhone">手机号码</label>
+					<div class="userPhone-input">
+						<input type="text" id="userPhone" name="userPhone" placeholder="请输入您的手机号码，11位有效数字"/>
+					</div>
+				</div>
+				<!--
+                	作者：offline
+                	时间：2018-11-16
+                	描述：邮箱
+                -->
+				<div class="userEmail-box">
+					<span id="require5">*</span>
+					<label for="userEmail">电子邮箱</label>
+					<div class="userEmail-input">
+						<input type="text" id="userEmail" name="userEmail" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+					</div>
+				</div>
+				<div class="submit-box">
+				<input id="submit-button" type="submit" value="注册" onclick="register();">
+				</div>
+				
+				<div class="goLogin-box">
+					<a href="login.html" style="text-decoration: none;">已有账号？去登录</a>
+				</div>
+				</form>
+			</div>
+	</body>
+	<script type="text/javascript" src="js/register.js"></script>
+</html>

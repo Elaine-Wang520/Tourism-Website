@@ -1,0 +1,237 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+.main_wrap{
+	width: 100%;
+	height: 100%;
+	background-color: #cdedf8;
+}
+/*头部整体部分*/
+.header{
+	background-color: ;
+	height: 100px;
+}
+.header li{
+	list-style: none;
+	margin-top: -50px;
+	margin-left: 1150px;
+}
+.header a{
+	color: black;
+}
+.header img{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	margin-left: 220px;
+}
+/*Travel艺术字部分*/
+.test{
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	margin-top: -60px;
+}
+ .test p:first-child {/*选择器用于选取属于其父元素的首个子元素的指定选择器*/
+      text-align: center;
+      font-family: cursive;
+      font-size: 70px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: #fff;
+    }
+    .test p:first-child span {
+      cursor: pointer;/*光标呈现为指示链接的指针（一只手）*/
+      text-shadow: 0px 0px 2px #686868,/*设置阴影*/
+        0px 1px 1px #ddd,
+        0px 2px 1px #d6d6d6,
+        0px 3px 1px #ccc,
+        0px 4px 1px #c5c5c5,
+        0px 5px 1px #c1c1c1,
+        0px 6px 1px #bbb,
+        0px 7px 1px #777,
+        0px 8px 3px rgba(100, 100, 100, 0.4),
+        0px 9px 5px rgba(100, 100, 100, 0.1),
+        0px 10px 7px rgba(100, 100, 100, 0.15),
+        0px 11px 9px rgba(100, 100, 100, 0.2),
+        0px 12px 11px rgba(100, 100, 100, 0.25),
+        0px 13px 15px rgba(100, 100, 100, 0.3);
+      -webkit-transition: all .2s linear;/*渐变*/
+      transition: all .2s linear;
+    }
+    .test p:first-child span:hover {
+      text-shadow: 0px 0px 2px #686868,
+        0px 1px 1px #fff,
+        0px 2px 1px #fff,
+        0px 3px 1px #fff,
+        0px 4px 1px #fff,
+        0px 5px 1px #fff,
+        0px 6px 1px #fff,
+        0px 7px 1px #777,
+        0px 8px 3px #fff,
+        0px 9px 5px #fff,
+        0px 10px 7px #fff,
+        0px 11px 9px #fff,
+        0px 12px 11px #fff,
+        0px 13px 15px #fff;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear;
+    }
+ a{
+	    text-decoration: none;
+	  }
+	  /*js轮播部分*/
+.imgShow {
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin:30px auto 0 auto;
+    box-shadow: 0 0 5px rgb(180, 182, 180);
+    overflow: hidden;
+  } 
+.imgShow .wrap {
+    position: absolute;
+    width: 8400px;
+    height: 500px;
+    z-index: 1;
+  }
+.imgShow .wrap img {
+    float: left;
+    width: 1200px;
+    height: 500px;
+  } 
+.imgShow .buttons {
+    position: absolute;
+    right: 5px;
+    bottom:30px;
+    width: 120px;
+    height: 10px;
+    z-index: 2;
+  }
+.imgShow .buttons span {
+    margin-left: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(211, 212, 211);
+    text-align: center;
+    color:white;
+    cursor: pointer;
+  }
+.imgShow .buttons span.on{
+    background-color: rgb(151, 150, 150);
+  }
+.imgShow .arrow {
+    position: absolute;
+    top: 40%;
+    color: rgb(179, 182, 179);
+    padding:0px 15px;
+    border-radius: 50%;
+    font-size: 50px;
+    z-index: 2;
+    display: none;
+  }
+.imgShow .arrow_left {
+    left: 10px;
+  } 
+.imgShow .arrow_right {
+    right: 10px;
+  } 
+.imgShow:hover .arrow {
+    display: block;
+  } 
+.imgShow .arrow:hover {
+    background-color: rgba(0,0,0,0.5);
+  }
+  /*导航栏部分*/
+ .nav{
+ 	width: 100%;
+	height: 50px;
+}
+.nav ul{
+	margin-left: 300px;
+}
+.nav li{
+	padding-right: 20px;
+	list-style: none;
+	text-decoration: none;
+	float: left;
+}
+.nav li a{
+	display: block;	/*区块显示*/
+	border-radius:10px;
+	text-decoration: none;
+	background: #f7941d url(../img/menu_bg.jpg) repeat-y left;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	margin-right: 80px;
+	padding: 10px 10px;20px 20px;	/*设置内边距，将a元素所在的容器预留空间以显示背景图像*/
+}
+/*鼠标悬停于菜单项上的样式*/
+.nav li a:hover{
+	background: #f7941d url(../img/menu_h.jpg) repeat-x top;
+	text-decoration: underline;
+}
+/*当前页面链接样式*/
+.nav li a.current,.nav li a:hover.current{
+	background: #f7941d url(../img/menu_h.jpg) repeat-x top;
+}
+.location{ 
+	position:fixed;
+	right:0;
+	bottom:10px; 
+	width:100px;
+	background:#528afa; 
+	cursor:pointer;
+	line-height: 40px;
+	text-align: center;
+}
+.location p{
+	color: wheat;
+}
+@media (max-width:780px) {
+	.header li{
+		margin-left: 500px;
+	}
+	.header img{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	margin-left: 100px;
+	}
+	.test{
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: -50px;
+	margin-left: 250px;
+	}
+	.test p:first-child {
+      font-size: 50px; 
+    }
+	.imgShow {
+    width: 600px;
+    height: 400px; 
+  } 
+  .imgShow .wrap {  
+    width: 4200px;
+    height: 400px;  
+  }
+.imgShow .wrap img {
+    width: 600px;
+    height: 400px;
+  } 
+  .nav{
+  	width: 100%;
+  	height: 250px;
+  	margin-left: -8%;
+  }
+	.nav li{
+		float: none;
+	}
+}

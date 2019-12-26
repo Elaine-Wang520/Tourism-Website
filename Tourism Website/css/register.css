@@ -1,0 +1,159 @@
+body{
+	background-image: url("../img/banner1.jpg");/*背景图片*/
+    background-size: 100%;背景拉伸整个屏幕
+    background-repeat: no-repeat;
+}
+input{
+		display: inline-block;
+		background: #fff;
+	}
+.register-box{
+		position: relative;
+		height: 700px;
+		width: 800px;
+		top: 80px;
+		margin: 0 auto;		
+		background:#ffffff;
+		border: 7px solid #ccc;
+	}
+.register-box h1{
+	color: red;
+	font: "微软雅黑" 35px;
+	text-align: center;
+}
+/*户名名*/
+.username-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:100px;
+		margin-left:220px;
+		font-weight: 700;
+	}
+.username-input{
+		display: inline-block;
+		margin-left: 45px;
+	}
+#username{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+.userPassword-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:160px;
+		margin-left:220px;
+		font-weight: 700;
+	}
+.userPassword-input{
+		display: inline-block;
+		margin-left: 61px;
+	}
+#userPassword{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+.userRePassword-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:220px;
+		margin-left:220px;
+		font-weight: 700;
+	}
+.userRePassword-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+#userRePassword{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+.userPhone-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:280px;
+		margin-left:220px;
+		font-weight: 700;
+	}
+.userPhone-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+#userPhone{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+.userEmail-box{
+		position: absolute;
+		width: 420px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:340px;
+		margin-left:220px;
+		font-weight: 700;
+	}
+.userEmail-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+#userEmail{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	} 
+.register-box span{
+		color:red;
+	}
+.submit-box{
+		position:absolute;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 440px;
+		margin-left:280px;
+		border-radius: 10px;
+	}
+#submit-button{
+		width: 80px;
+		height: 40px;
+		border-radius: 10px;
+		background: #3BD9FF;
+	}
+.goLogin-box{
+		position:absolute;
+		width: 150px;
+		height: 20px;
+		margin-top: 460px;
+		margin-left:450px;
+}
+.goLogin-box a{
+	color:#3BD9FF ;
+}
+@media (max-width:780px) {
+	body{
+		width: 780px;
+		height: 800px;
+		background:rgb(16, 148, 187,0.5);
+	}
+	.register-box{
+		height: 700px;
+		width: 650px;
+		top: 80px;
+	}
+}
